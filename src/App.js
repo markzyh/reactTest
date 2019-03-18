@@ -15,19 +15,23 @@ class App extends Component {
   }
   addComments(msg){
     console.log(msg.toString())
+    let array = this.state.comments
+    let newArray = [...array,msg]
     this.setState({
       //comments:this.state.comments.push(msg)
       
-      comments:[...this.state.comments,msg]
+      comments:newArray
 
     })
     console.log(this.state.comments)
   }
   deleteMsg(index){
     console.log(index)
-    const newcomments = this.state.comments.splice(index,1)
+    let array = this.state.comments
+    let newArray = [...array]
+    newArray.splice(index,1)
     this.setState({
-      comments:newcomments
+      comments:newArray
     })
     console.log(this.state.comments)
   }

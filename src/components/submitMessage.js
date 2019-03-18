@@ -39,7 +39,7 @@ import React from 'react'
                     placeholder="请输入内容"
                     ref={(textInput) =>{this.textInput = textInput}}
                 /> }
-                <button type="submit" className="btn btn-primary">留言</button>
+                <button type="submit" className="btn btn-primary mt-3">留言</button>
              </div>
          </form>
          )
