@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {}
+        {/* hahahahahahaha */}
         <MessageList messages={this.state.comments} onDeleteMsg={this.deleteMsg}/>
         <SubmitMessage onAddComments={this.addComments}/>
       </div>
